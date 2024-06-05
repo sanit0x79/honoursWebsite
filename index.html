@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honors Program Application</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/b1c988c108.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+    <div class="content bg-gray-300 bg-opacity-0 z-10 max-w-3xl mx-auto py-15">
+        <h1 class="text-5xl font-bold text-center pb-4 text-white typing">Honors Program Application</h1>
+        <div class="w-full bg-gray-300 rounded-full mb-8">
+            <div id="progress-bar" class="progress-bar rounded-full"></div>
+        </div>
+        <div class="space-y-6">
+            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
+                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section1')">Why I Should Be Admitted</h2>
+                <div id="section1" class="hidden mt-4">
+                    <p>Placeholder text for why you deserve to be in the honors program. Add compelling reasons and achievements here.</p>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
+                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section2')">What I Can Bring to the Program</h2>
+                <div id="section2" class="hidden mt-4">
+                    <p>Placeholder text for what you can bring to the honors program. Discuss your skills, experiences, and unique perspectives here.</p>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
+                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section3')">My Achievements</h2>
+                <div id="section3" class="hidden mt-4">
+                    <p>Placeholder text for your achievements. Highlight your academic, extracurricular, and personal achievements.</p>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
+                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section4')">What I Would Like to Gain</h2>
+                <div id="section4" class="hidden mt-4">
+                    <p>Placeholder text for what you would like to gain from the honors program. Discuss your goals and aspirations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-bar fixed top-1/4 left-0 z-50">
+        <a href="https://github.com/sanit0x79" target="_blank" class="social-link bg-gray-800 text-white">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sanit0x79/" target="_blank" class="social-link bg-blue-700 text-white">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="social-link bg-red-600 text-white" onclick="showEmailPopup(event)">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    <div id="email-popup" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
+        <p>Email: <a href="mailto:youremail@example.com" class="text-blue-600">e.m.j.dokter@st.hanze.nl</a></p>
+        <button onclick="hideEmailPopup()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
+    </div>
+    <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40" onclick="hideEmailPopup()"></div>
+    <div class="timeline animate-fade-in">
+        <div class="timeline-item">
+            <div class="timeline-year">2004</div>
+            <div class="chatbox" id="content-2004">Born</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2008</div>
+            <div class="chatbox" id="content-2008">Got really interested in IT because I found out I was handicapped and I was spending a lot of time in a wheelchair</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2014</div>
+            <div class="chatbox" id="content-2014">I did my first programming bootcamp and started loving programming more</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2015</div>
+            <div class="chatbox" id="content-2015">I took extra classes at a secondary school while still in primary school in App development</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2019</div>
+            <div class="chatbox" id="content-2019">I went to my first security event with my secondary school, here my interest for security got sparked.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2022</div>
+            <div class="chatbox" id="content-2022">IT interest got even bigger because of COVID, I started doing more programming in my free time.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div class="chatbox" id="content-2023">Went to the Hanze and learned so much more about IT and Security, sparking my interest more than ever.</div>
+        </div>
+    </div>
+    
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 50 },
+                size: { value: 8 },
+            },
+            interactivity: {
+                events: {
+                    onhover: { enable: true, mode: 'repulse' }
+                }
+            }
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        });
+
+        document.querySelectorAll('.animate-fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        const cursor = document.querySelector('.custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    </script>
+</body>
+
+</html>
