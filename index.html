@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Honours Program Application</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://kit.fontawesome.com/b1c988c108.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Honours Program Application</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/b1c988c108.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
-    <div class="content bg-gray-300 bg-opacity-0 z-10 max-w-3xl mx-auto py-15">
-        <h1 class="text-5xl font-bold text-center pb-4 text-white typing">Honours Program Application</h1>
-        <div class="w-full bg-gray-300 rounded-full mb-8">
-            <div id="progress-bar" class="progress-bar rounded-full"></div>
-        </div>
-        <div class="space-y-6">
-            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
-                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section1')">Why I Should Be Admitted</h2>
-                <div id="section1" class="hidden mt-4">
-                    <p>Placeholder text for why you deserve to be in the honors program. Add compelling reasons and achievements here.</p>
+    <body>
+        <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+        <div class="content bg-gray-300 bg-opacity-0 z-10 max-w-3xl mx-auto py-15">
+            <h1 class="text-5xl font-bold text-center pb-4 text-white typing">Honours Program Application</h1>
+            <div class="w-full bg-gray-300 rounded-full mb-8">
+                <div id="progress-bar" class="progress-bar rounded-full"></div>
+            </div>
+            <div class="space-y-6">
+                <div class="bg-white bg-opacity-75 p-6 rounded-lg shadow-md card animate-fade-in">
+                    <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section1')">Why I Should Be Admitted</h2>
+                    <div id="section1" class="hidden mt-4">
+                        <p>I am eager to be admitted into the honours program because of my passion for Cybersecurity and Computer Science. My interest in these fields
+                            stem from the desire to help people and ensure their safety in cyberspace. My goal is to work for the government, where I can use my skills
+                            to protect the world against cyber threats and make sure that our infrastructure lasts. By being part of this program I hope to further develop
+                            these skills, and prepare myself for this future. <br>
+                            My dedication, passion and commitment to making a postive impact might make me the ideal candidate for the honours program.</p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-75 p-6 rounded-lg shadow-md card animate-fade-in">
+                    <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section2')">What I Can Bring to the Program</h2>
+                    <div id="section2" class="hidden mt-4">
+                        <p>There are a few things I can bring to the honours program. The main one being my problem solving skills.
+                            I do a lot of programming and programming involves a bunch of problem solving, it's something I've been getting a lot better
+                            at in the past few years, and it is definitely something that could be of help during the projects we'll be doing during the honours program.
+                            Another thing is my motivation and drive. I have a lot of motivation for projects and for learning. <br>
+                            <br>For me learning new skills actually makes me happy. I am confident that my commitment to helping others
+                            and my enthusiasm for learning will enable me to make meaningful contributions to the program.</p>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-75 p-6 rounded-lg shadow-md card animate-fade-in">
+                    <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section3')">My Achievements</h2>
+                    <div id="section3" class="hidden mt-4">
+                        <p>When I'm not busy with studying, I'm usually working on my personal projects or I am at networking events. I like meeting new people and especially
+                            if they are in the careerfield that I want to get into. Recently I had a dinner with CGI and talked over internship opportunities. I also went to a
+                            workshop in hardware hacking and got to talk to an employee of WarpNet, a security company in Groningen and got the possiblity to do an intership there
+                            in my third year. <br>
+                            <br> I am currently busy with two projects. One being a cryptography toolkit that I'm making in python, named: "CryptoSuite".
+                            And the other being a Discord Library to learn how to use websockets and API's. <br>You can click the projects below to get to the pages. <br> 
+                            <br>On my GitHub there are also a few other projects that I have been working on, or have finished during my current time at the Hanze <br>
+                            <br> <ul> <a href="https://github.com/sanit0x79/CryptoSuite">- Cryptosuite</a></ul> 
+                            <ul><a href="https://github.com/sanit0x79/saniLib">- Discord Library</a></ul></p>
+
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-75 p-6 rounded-lg shadow-md card animate-fade-in">
+                    <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section4')">What I Would Like to Gain</h2>
+                    <div id="section4" class="hidden mt-4">
+                        <p>The main thing I would like to gain from the honours program is the connections and networking possibilities. 
+                            Networking is a really big part of my life and it's something I love doing, the honours program will help me with meeting 
+                            new people and making new connections.<br>
+                            <br>Joining the honours program would provide me with advanced knowledge and skills needed to excel in this field. I am excited about the opportunity 
+                            to engage with like-minded people, and to be challenged academically.</p>
+                    </div>
                 </div>
             </div>
-            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
-                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section2')">What I Can Bring to the Program</h2>
-                <div id="section2" class="hidden mt-4">
-                    <p>Placeholder text for what you can bring to the honors program. Discuss your skills, experiences, and unique perspectives here.</p>
-                </div>
+        </div>
+        <div class="social-bar fixed top-1/4 left-0 z-50">
+            <a href="https://github.com/sanit0x79" target="_blank" class="social-link bg-gray-800 text-white">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sanit0x79/" target="_blank" class="social-link bg-blue-700 text-white">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link bg-red-600 text-white" onclick="showEmailPopup(event)">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <div id="email-popup" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
+            <p>Email: <a href="mailto:e.m.j.dokter@st.hanze.nl" class="text-blue-600">e.m.j.dokter@st.hanze.nl</a></p>
+            <button onclick="hideEmailPopup()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
+        </div>
+        <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40" onclick="hideEmailPopup()"></div>
+        <div class="timeline animate-fade-in">
+            <div class="timeline-item">
+                <div class="timeline-year">2004</div>
+                <div class="chatbox" id="content-2004">I was born and quickly learnt to walk and talk</div>
             </div>
-            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
-                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section3')">My Achievements</h2>
-                <div id="section3" class="hidden mt-4">
-                    <p>Placeholder text for your achievements. Highlight your academic, extracurricular, and personal achievements.</p>
-                </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2008</div>
+                <div class="chatbox" id="content-2008">I got to know I was handicapped, I spent a lot of time in a wheelchair and wasn't able to go outside, so I got really interested in computers and IT</div>
             </div>
-            <div class="bg-white bg-opacity-50 p-6 rounded-lg shadow-md card animate-fade-in">
-                <h2 class="text-xl font-semibold text-blue-600 cursor-pointer" onclick="toggleSection('section4')">What I Would Like to Gain</h2>
-                <div id="section4" class="hidden mt-4">
-                    <p>Placeholder text for what you would like to gain from the honors program. Discuss your goals and aspirations.</p>
-                </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2014</div>
+                <div class="chatbox" id="content-2014">Because of my growing interest in IT, my mum decided to put me in a programming bootcamp, and I learnt Python for the first time</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2015</div>
+                <div class="chatbox" id="content-2015">My primary school and my parents figured out I was very intelligent, and decided to ask a secondary school for extra lessons in programming and app development. I went to 
+                    this secondary school every Thursday to learn more about how to do IT</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2019</div>
+                <div class="chatbox" id="content-2019">Due to my interest in IT, when I was in secondary school I learnt that a company called first8 was doing a security4teens event at a university. I asked my secondary school if I was allowed to
+                    go during school hours, and surprisingly they agreed on it. So I went to the event and my interest for Cybersecurity got sparked</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <div class="chatbox" id="content-2021">Due to the COVID pandemic and a lot of free time, I spent more and more time learning about IT and programming, eventually I realized that this is something I want to do as a full-time job</div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <div class="chatbox" id="content-2022">While working a full-time job during my gap year, I realized I wanted to do some studying in my free time, so I applied for a course in Digital Forensics at Laudius. I did this course and now I definitely knew I wanted to start doing Cybersecurity as my full-time job in the future</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="chatbox" id="content-2023">I finished my gapyear and I needed to apply for a university. I ended up here and found out about a lot of event opportunities and network opportunities. I went to every single one of them,
+                    just to learn more about IT and learn about more parts of Cybersecurity that wasn't being taught in our normal curriculum</div>
             </div>
         </div>
-    </div>
-    <div class="social-bar fixed top-1/4 left-0 z-50">
-        <a href="https://github.com/sanit0x79" target="_blank" class="social-link bg-gray-800 text-white">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/sanit0x79/" target="_blank" class="social-link bg-blue-700 text-white">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#" class="social-link bg-red-600 text-white" onclick="showEmailPopup(event)">
-            <i class="fas fa-envelope"></i>
-        </a>
-    </div>
-    <div id="email-popup" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg shadow-lg z-50">
-        <p>Email: <a href="mailto:e.m.j.dokter@st.hanze.nl" class="text-blue-600">e.m.j.dokter@st.hanze.nl</a></p>
-        <button onclick="hideEmailPopup()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
-    </div>
-    <div id="overlay" class="hidden fixed inset-0 bg-black opacity-50 z-40" onclick="hideEmailPopup()"></div>
-    <div class="timeline animate-fade-in">
-        <div class="timeline-item">
-            <div class="timeline-year">2004</div>
-            <div class="chatbox" id="content-2004">Born</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2008</div>
-            <div class="chatbox" id="content-2008">Got really interested in IT because I found out I was handicapped and I was spending a lot of time in a wheelchair</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2014</div>
-            <div class="chatbox" id="content-2014">I did my first programming bootcamp and started loving programming more</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2015</div>
-            <div class="chatbox" id="content-2015">I took extra classes at a secondary school while still in primary school in App development</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2019</div>
-            <div class="chatbox" id="content-2019">I went to my first security event with my secondary school, here my interest for security got sparked.</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2022</div>
-            <div class="chatbox" id="content-2022">IT interest got even bigger because of COVID, I started doing more programming in my free time.</div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-year">2023</div>
-            <div class="chatbox" id="content-2023">Went to the Hanze and learned so much more about IT and Security, sparking my interest more than ever.</div>
-        </div>
-    </div>
-    
-    <script>
+
+        <script>
         particlesJS('particles-js', {
             particles: {
                 number: { value: 50 },
@@ -119,13 +149,8 @@
 
         document.querySelectorAll('.animate-fade-in').forEach(element => {
             observer.observe(element);
-        });
-
-        const cursor = document.querySelector('.custom-cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-    </script>
-</body>
+        });   
+        </script>
+    </body>
 
 </html>
